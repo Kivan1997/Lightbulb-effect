@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Digi-X Intern Assessment</title>
+</head>
+<body> 
+    <!-- onclick event is generated 
+        and it calls turnOnOff function --> 
+    <!-- lightoff.png is the turn off bulb image --> 
+	
+	<div class="canvas">
+        <h1>Turn the light on and off </br>by clicking the bulb!</h1>
+		<img id="myImage" onclick="changeImage()" src="lightoff.png"
+    </div>
+  
+    <script>
+       function changeImage() {
+           var image = document.getElementById('myImage');
+              if (image.src.match("lighton")) {
+                  image.src = "lightoff.png";
+                 } else {
+                       image.src = "lighton.png";
+                   }
+       }
+    </script>
+</body> 
+</html>
+
+
+<!-- Fixes that has been done in this -->
+
+<!-- 1. To ensure that the light can be turned on and off, I have used javascript function.-->
